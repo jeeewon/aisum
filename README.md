@@ -10,14 +10,14 @@
 
 ## Pipeline
 
-<img src="docs:images/flow.png" alt="Query Module & Embedding Module 흐름도" width="800">
+<img src="docs/images/flow.png" alt="Query Module & Embedding Module 흐름도" width="800">
 
 - **Query Module**: 기사 이미지 입력 → 객체 검출(YOLO) → 객체별 유사 이미지 top-k 선정 → 최종 결과 선정
 - **Embedding Module**: 쇼핑몰 상품 이미지(MySQL 연동) → 객체 검출 → 이미지 임베딩 → 벡터 DB 인덱싱(HNSW)
 
 ## Demo
 
-<img src="docs:images/example.png" alt="검색 화면 예시" width="800">
+<img src="docs/images/example.png" alt="검색 화면 예시" width="800">
 
 이미지 URL 입력 시, 객체 검출된 영역별로 유사 상품을 유사도(Score) 순으로 반환하는 검색 화면 예시입니다.
 
